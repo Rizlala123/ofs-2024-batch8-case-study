@@ -1,2 +1,2 @@
-Name:
-Employee Code:
+Name: Riz Lala
+Employee Code:XXXX694

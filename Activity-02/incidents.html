@@ -1,0 +1,94 @@
+<!--
+ Copyright (c) 2014, 2024, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+ <div class="oj-hybrid-padding">
+
+<h2>
+  Input text, input number
+</h2>
+<br>
+
+<oj-c-input-text
+  id="text-input"
+  value="{{value}}"
+  label-hint="Enter Text"
+  label-edge="inside"></oj-c-input-text>
+
+  <h3>
+    <span>
+      Text: <oj-bind-text value="[[value]]"></oj-bind-text>
+    </span>
+  </h3>
+
+  <br>
+
+  <oj-c-input-number
+      value="{{salary}}"
+      label-hint="Enter a Number"
+      min="0"
+      max="100"
+      step="0"></oj-c-input-number>
+
+      <h3>
+        <span>
+          Number: <oj-bind-text value="[[salary]]"></oj-bind-text>
+        </span>
+      </h3>
+
+
+      <h2>
+        Input Date time
+      </h2>
+
+
+      <div id="datetimepickerid">
+        <oj-label for="datepicker">Date Time Picker</oj-label>
+        <oj-date-time-picker id="datepicker" value="{{datetime}}"></oj-date-time-picker>
+      
+        <br />
+      
+        <span class="oj-label">Date Time Selected is: </span>
+        <span><oj-bind-text value="[[datetime]]"></oj-bind-text></span>
+      </div>
+
+      <div>
+
+        <h2>
+          Input Password
+        </h2>
+
+        <oj-c-input-password label-hint="Enter Password" disabled="false" value="{{password}}"></oj-c-input-password>
+        <br />
+      
+        <span class="oj-label">Are you sure your password is: </span>
+        <span><oj-bind-text value="[[password]]"></oj-bind-text>?</span>
+      </div>
+<br>
+      <div>
+      <oj-c-form-layout id="personal-information" direction="row" max-columns="2">
+        <oj-c-select-single
+                  id="state"
+                  label-hint="State"
+                  value="{{stateVal}}"
+                  data="[[statesDP]]"
+                  item-text="label"
+                  required="true"></oj-c-select-single>
+
+                  <br>
+                  <span class="oj-label">State is: </span>
+                  <span><oj-bind-text value="[[stateVal]]"></oj-bind-text>?</span>
+
+      </oj-c-form-layout>
+    </div>
+
+    <div>
+      <h1>
+        buttons, messages, progress 
+      </h1>
+
+      <oj-c-button id="size_button3" size="md" label="Random button"></oj-c-button>
+
+    </div>
+      </div>

@@ -1,0 +1,35 @@
+<!--
+ Copyright (c) 2014, 2024, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+ <div class="oj-hybrid-padding">
+
+  <h1>Login Page</h1>
+
+  <br><br><br>
+
+
+  <h3>Username</h3>
+  <oj-c-input-text
+  id="text-input"
+  value="{{username}}"
+  label-hint="Enter Username"
+  label-edge="inside"></oj-c-input-text>
+  <br>
+
+  <h3>Password</h3>
+
+  <oj-c-input-password label-hint="Enter Password" disabled="false" value="{{password}}"></oj-c-input-password>
+  <br>
+  <span class="oj-label">Are you sure your password is: </span>
+  <span><oj-bind-text value="[[password]]"></oj-bind-text>?</span>
+  </div>
+  <br>
+
+
+  <oj-c-button id="size_button3" size="md" label="Login"  on-oj-action="[[checkLoginDetails]]"></oj-c-button>
+<br>
+  <oj-c-button id="size_button3" size="md" label="Dont havean account? Register"  on-oj-action="[[redirectToLogin]]"></oj-c-button>
+    </div>
+      </div>

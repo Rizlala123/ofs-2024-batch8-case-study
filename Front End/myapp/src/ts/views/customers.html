@@ -1,0 +1,41 @@
+<!--
+ Copyright (c) 2014, 2024, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<div class="oj-hybrid-padding">
+  <h1>Assignment 3</h1>
+  <div>
+
+    <my-component></my-component>
+    <h1>
+      Check your iq here
+    </h1>
+    <br>
+    <br>
+
+    <oj-c-input-text
+      id="text-input"
+      value="{{name}}"
+      label-hint="Enter Your Name"
+      label-edge="inside"></oj-c-input-text>
+
+      <br>
+      
+      <h3>
+        <span id="iq">
+          Your iq is ....... <oj-bind-text value="[[iq]]"></oj-bind-text>
+        </span>
+      </h3>
+
+      <h3>
+        <span id="mockery">
+        </span>
+        <br>
+        <oj-bind-text value="[[personName]]"></oj-bind-text>
+        
+      </h3>
+
+      <oj-c-button id="size_button3" size="md" label="Calculate"  on-oj-action="[[buttonClick]]"></oj-c-button>
+    </div>
+</div>
